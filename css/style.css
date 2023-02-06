@@ -461,23 +461,22 @@ a {
   width: 870px;
   border-radius: 32px;
   min-height: 460px;
-  /* background-image: url(../img/working-img1.jpg); */
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .working-img1 {
-  background-image: url("/img/working-img1.jpg");
+  background-image: url("../img/working-img1.jpg");
 }
 .working-img2 {
-  background-image: url("/img/working-img2.jpg");
+  background-image: url("../img/working-img2.jpg");
 }
 .working-img3 {
-  background-image: url("/img/working-img3.jpg");
+  background-image: url("../img/working-img3.jpg");
 }
 .working-img4 {
-  background-image: url("/img/working-img4.jpg");
+  background-image: url("../img/working-img4.jpg");
 }
 
 .working__btn-first {
