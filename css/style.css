@@ -133,8 +133,12 @@ a {
   padding: 14px 63px;
 }
 
+.burger {
+  display: none;
+}
+
 .header__logo {
-  width: 264px;
+  width: 285px;
   height: 72px;
   margin-right: auto;
   outline: none;
@@ -405,6 +409,7 @@ a {
 }
 
 .step-number {
+  padding: 0;
   font-weight: 400;
   font-size: 1.125rem;
   line-height: 1.23;
@@ -453,12 +458,26 @@ a {
 }
 
 .descr__right-block {
-  width: 55.5rem;
+  width: 870px;
   border-radius: 32px;
-  background-image: url(../img/working-img1.jpg);
+  min-height: 460px;
+  /* background-image: url(../img/working-img1.jpg); */
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.working-img1 {
+  background-image: url("../img/working-img1.jpg");
+}
+.working-img2 {
+  background-image: url("../img/working-img2.jpg");
+}
+.working-img3 {
+  background-image: url("../img/working-img3.jpg");
+}
+.working-img4 {
+  background-image: url("../img/working-img4.jpg");
 }
 
 .working__btn-first {
@@ -791,4 +810,29 @@ a {
   margin: 0;
   padding-top: 87px;
   letter-spacing: 0.05px;
+}
+
+/***** TAB *****/
+
+.tabs-nav__btn--active {
+  color: #e1670e;
+}
+
+.tabs-item {
+  display: none;
+}
+
+.tabs-item--active {
+  display: block;
+  animation-name: slowly;
+  animation-duration: 0.8s;
+}
+
+@keyframes slowly {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
