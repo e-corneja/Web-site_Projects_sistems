@@ -31,8 +31,6 @@ document.querySelectorAll(".tabs-nav__btn").forEach(function (tabsBtn) {
       tabsBtn.classList.remove("tabs-item--active");
     });
 
-    document
-      .querySelector(`[data-target="${path}"]`)
-      .classList.add("tabs-item--active");
+    document.querySelector(`[data-target="${path}"]`).classList.add("tabs-item--active");
   });
 });
