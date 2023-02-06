@@ -15,7 +15,6 @@
     />
   </head>
   <body>
-<!--     comments -->
     <header class="header">
       <div class="header__content flex">
         <button class="btn-reset burger">
@@ -251,17 +250,40 @@
       <section class="working" id="working">
         <div class="container">
           <h2 class="section-title working__title">Как мы работаем</h2>
-          <div class="working__steps flex">
-            <p class="step-number step-number-first" tabindex="0">1 шаг</p>
-            <p class="step-number step-number-second" tabindex="0">2 шаг</p>
-            <p class="step-number step-number-third" tabindex="0">3 шаг</p>
-            <p class="step-number step-number-fourth" tabindex="0">4 шаг</p>
+          <div class="working__steps tabs-nav flex">
+            <button
+              class="step-number step-number-first tabs-nav__btn tabs-nav__btn--active btn-reset"
+              data-path="one"
+            >
+              1 шаг
+            </button>
+            <button
+              class="step-number step-number-second tabs-nav__btn btn-reset"
+              data-path="two"
+            >
+              2 шаг
+            </button>
+            <button
+              class="step-number step-number-third tabs-nav__btn btn-reset"
+              data-path="three"
+            >
+              3 шаг
+            </button>
+            <button
+              class="step-number step-number-fourth tabs-nav__btn btn-reset"
+              data-path="four"
+            >
+              4 шаг
+            </button>
           </div>
-          <div class="working__descr flex">
-            <div class="descr__left-block">
-              <div>
+          <div
+            class="working__descr tabs-item tabs-item--active"
+            data-target="one"
+          >
+            <div class="tabs-content flex">
+              <div class="descr__left-block">
                 <h3 class="descr__title">Проводим консультацию</h3>
-                <p class="descr__text">
+                <p class="descr__text btn-reset">
                   Влечёт за собой процесс внедрения и модернизации приоритизации
                   разума над эмоциями. В рамках спецификации современных
                   стандартов, некоторые особенности внутренней политики будут
@@ -276,16 +298,93 @@
                   особенности картины в целом, однако конкретные выводы,
                   разумеется, призваны к ответу.
                 </p>
+                <div class="btn__left-block">
+                  <button class="working__btn-first btn-reset btn">
+                    Подробнее
+                  </button>
+                  <button class="working__btn-second btn-reset">Договор</button>
+                </div>
               </div>
-
-              <div class="btn__left-block">
-                <button class="working__btn-first btn-reset btn">
-                  Подробнее
-                </button>
-                <button class="working__btn-second btn-reset">Договор</button>
-              </div>
+              <div class="descr__right-block working-img1"></div>
             </div>
-            <div class="descr__right-block"></div>
+          </div>
+          <div class="working__descr tabs-item" data-target="two">
+            <div class="tabs-content flex">
+              <div class="descr__left-block">
+                <h3 class="descr__title">Составляем смету</h3>
+                <p class="descr__text btn-reset">
+                  Внедрения и модернизации приоритизации разума над эмоциями.
+                  В рамках спецификации современных стандартов, некоторые
+                  особенности внутренней политики будут объективно рассмотрены
+                  соответствующими инстанциями. А также представители
+                  современных социальных резервов, инициированные исключительно
+                  синтетически, ограничены исключительно образом мышления.
+                  Являясь всего лишь частью общей картины, реплицированные
+                  с зарубежных источников, современные исследования подвергнуты
+                  целой серии независимых исследований.
+                </p>
+                <div class="btn__left-block">
+                  <button class="working__btn-first btn-reset btn">
+                    Подробнее
+                  </button>
+                  <button class="working__btn-second btn-reset">Договор</button>
+                </div>
+              </div>
+              <div class="descr__right-block working-img2"></div>
+            </div>
+          </div>
+          <div class="working__descr tabs-item" data-target="three">
+            <div class="tabs-content flex">
+              <div class="descr__left-block">
+                <h3 class="descr__title">Привлекаем подрядчиков</h3>
+                <p class="descr__text btn-reset">
+                  Идейные соображения высшего порядка, а также новая модель
+                  организационной деятельности требует анализа прогресса
+                  профессионального сообщества. Высокий уровень вовлечения
+                  представителей целевой аудитории является чётким
+                  доказательством простого факта: высококачественный прототип
+                  будущего проекта напрямую зависит от дальнейших направлений
+                  развития. Разнообразный и богатый опыт говорит нам, что новая
+                  модель организационной деятельности говорит о возможностях
+                  системы массового участия. Принимая во внимание показатели
+                  успешности, постоянное информационно-пропагандистское
+                  обеспечение нашей деятельности позволяет выполнить важные
+                  задания по разработке прогресса профессионального сообщества.
+                </p>
+                <div class="btn__left-block">
+                  <button class="working__btn-first btn-reset btn">
+                    Подробнее
+                  </button>
+                  <button class="working__btn-second btn-reset">Договор</button>
+                </div>
+              </div>
+              <div class="descr__right-block working-img3"></div>
+            </div>
+          </div>
+          <div class="working__descr tabs-item" data-target="four">
+            <div class="tabs-content flex">
+              <div class="descr__left-block">
+                <h3 class="descr__title">Инспектируем все этапы работ</h3>
+                <p class="descr__text btn-reset">
+                  Высокий уровень вовлечения представителей целевой аудитории
+                  является чётким доказательством простого факта:
+                  высококачественный прототип будущего проекта напрямую зависит
+                  от дальнейших направлений развития. Разнообразный и богатый
+                  опыт говорит нам, что новая модель организационной
+                  деятельности говорит о возможностях системы массового участия.
+                  Принимая во внимание показатели успешности, постоянное
+                  информационно-пропагандистское обеспечение нашей деятельности
+                  позволяет.
+                </p>
+                <div class="btn__left-block">
+                  <button class="working__btn-first btn-reset btn">
+                    Подробнее
+                  </button>
+                  <button class="working__btn-second btn-reset">Договор</button>
+                </div>
+              </div>
+              <div class="descr__right-block working-img4"></div>
+            </div>
           </div>
         </div>
       </section>
