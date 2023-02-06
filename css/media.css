@@ -344,7 +344,7 @@
     justify-content: space-between;
   }
 
-  .working__descr {
+  .tabs-content {
     flex-direction: column-reverse;
     gap: 38px;
     max-height: 979px;
@@ -469,6 +469,11 @@
     overflow-x: hidden;
   }
 
+  /* .container {
+    max-width: 290px;
+    padding: 0 15px;
+  } */
+
   .header {
     max-width: 100vw;
   }
@@ -497,6 +502,15 @@
   .header__btn svg {
     width: 28px;
     height: 28px;
+  }
+
+  .header__nav {
+    padding: 78px 15px;
+    width: 100%;
+  }
+
+  .header__nav .nav__list {
+    padding-top: 15px;
   }
 
   .hero {
@@ -563,10 +577,10 @@
   .projects__left {
     border-radius: 16px;
     bottom: 10px;
-    margin-bottom: 29px;
+    margin-bottom: 33px;
     padding-top: 72%;
     min-height: 0;
-    background-size: 290px 200px;
+    background-size: 100% 51%;
     background-position: top;
   }
 
@@ -608,7 +622,7 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
   }
 
   .info-right-descr {
@@ -641,6 +655,10 @@
   .working__steps {
     gap: 0;
     margin-bottom: 16px;
+  }
+
+  .tabs-content {
+    gap: 0;
   }
 
   .step-number {
@@ -700,7 +718,6 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 24px;
-    letter-spacing: 0.2px;
     max-width: 261px;
   }
 
@@ -741,11 +758,6 @@
     /* margin-bottom: 0; */
   }
 
-  /* .form {
-    gap: 25px;
-    max-height: 430px;
-  } */
-
   .form {
     width: 100%;
     display: block;
@@ -753,13 +765,19 @@
   }
 
   .form__input {
+    margin-right: 0;
     margin-bottom: 25px;
   }
 
+  .form__textarea {
+    margin-right: 0;
+  }
+
   .form__btn {
-    align-self: center;
+    margin: 0 auto;
+    display: block;
     padding: 12px 28px;
-    transform: translate(-53%);
+    transform: none;
     font-weight: 700;
     font-size: 12px;
     line-height: 15px;
