@@ -483,24 +483,26 @@ a {
 
 .project__btn {
   padding: 17px 38px;
-  outline: 3px solid var(--color-primary);
+  border: 3px solid var(--color-primary);
   border-radius: 16px;
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.25;
   color: var(--color-white);
   transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out;
-  -webkit-appearance: none;
+ 
 }
 
 .project__btn:focus-visible,
 .project__btn:hover {
+   color: var(--color-white);
   background-color: var(--color-primary);
 }
 
 .project__btn:active {
+   color: var(--color-white);
   background-color: var(--color-primary-dark);
-  outline: 3px solid var(--color-primary-dark);
+  border: 3px solid var(--color-primary-dark);
 }
 
 .projects__right {
