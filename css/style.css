@@ -656,7 +656,7 @@ a {
 
 .working__btn-second {
   padding: 20px 37px;
-  outline: 1px solid var(--color-black);
+  border: 1px solid var(--color-black);
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.25;
@@ -668,7 +668,7 @@ a {
 .working__btn-second:focus-visible,
 .working__btn-second:hover {
   background-color: var(--color-grey-dark);
-  outline: 1px solid var(--color-grey-dark);
+  border: 1px solid var(--color-grey-dark);
   color: var(--color-white);
 }
 
