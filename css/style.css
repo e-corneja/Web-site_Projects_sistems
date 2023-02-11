@@ -490,6 +490,7 @@ a {
   line-height: 1.25;
   color: var(--color-white);
   transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out;
+  -webkit-appearance: none;
 }
 
 .project__btn:focus-visible,
