@@ -472,6 +472,11 @@
     flex-direction: column;
     gap: 10px;
   }
+  
+   .form__btn {
+    margin: 0 auto;
+    display: block;
+  }
 }
 
 @media (max-width: 489px) {
